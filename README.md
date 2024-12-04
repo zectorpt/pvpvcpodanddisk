@@ -22,6 +22,6 @@ kubectl expose pod mypod --type=LoadBalancer --port=80 --target-port=80 --name=m
 kubectl exec --stdin --tty mypod -- sh
 
 # To delete everything
-kubectl delete -f azure-disk-pod.yaml
-kubectl delete -f pvc-azuredisk.yaml
-kubectl delete -f pv-azuredisk.yaml
+kubectl delete -f azure-disk-pod.yaml <br>
+kubectl delete -f pvc-azuredisk.yaml <br>
+kubectl delete -f pv-azuredisk.yaml <br>
