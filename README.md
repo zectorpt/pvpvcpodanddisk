@@ -10,7 +10,7 @@ az disk create \
   --query id --output tsv
   
 
-/subscriptions/a67cbe10-1391-446f-a40e-c0e41d4c7538/resourceGroups/MC_onenode_onenode_switzerlandnorth/providers/Microsoft.Compute/disks/myAKSDisk
+/subscriptions/[SUB]/resourceGroups/MC_onenode_onenode_switzerlandnorth/providers/Microsoft.Compute/disks/myAKSDisk
 
 
 pv-azuredisk.yaml
@@ -29,7 +29,7 @@ spec:
   storageClassName: managed-csi
   csi:
     driver: disk.csi.azure.com
-    volumeHandle: /subscriptions/a67cbe10-1391-446f-a40e-c0e41d4c7538/resourceGroups/MC_onenode_onenode_switzerlandnorth/providers/Microsoft.Compute/disks/myAKSDisk
+    volumeHandle: /subscriptions/[SUB]/resourceGroups/MC_onenode_onenode_switzerlandnorth/providers/Microsoft.Compute/disks/myAKSDisk
     volumeAttributes:
       fsType: ext4
 	  
