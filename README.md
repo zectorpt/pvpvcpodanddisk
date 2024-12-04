@@ -3,11 +3,7 @@ az aks show --resource-group onenode --name onenode --query nodeResourceGroup -o
 
 MC_onenode_onenode_switzerlandnorth
 
-az disk create \
-  --resource-group MC_onenode_onenode_switzerlandnorth \
-  --name myAKSDisk \
-  --size-gb 25 \
-  --query id --output tsv
+az disk create --resource-group MC_onenode_onenode_switzerlandnorth --name myAKSDisk --size-gb 25 --query id --output tsv
   
 
 /subscriptions/[SUB]/resourceGroups/MC_onenode_onenode_switzerlandnorth/providers/Microsoft.Compute/disks/myAKSDisk
